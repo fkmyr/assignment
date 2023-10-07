@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My First Assignment
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Add css file-->
+        <link rel="stylesheet" href="./assignment1.css">
+        <!--add bootstrap file-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+
+        <!---Heading-->
+        <div>
+            <h4 id="heading" style="text-align:center"> Assignment</h4>
+        </div>
+           <head>
+             <!---Start of the body-->
+          <body onload="showComment()">
+              <div class="container ">
+                <!--for card-->
+                <div class="row">
+                  <div class="col-sm-3 pt-5 mt-3">
+                    <div class="card" style="height: 300px; width: 280px; background-color: black;">
+                      <img src="./nando-jpeg-quality-001.jpg" class="card-img-center pt-3" alt="error" id="iamge1"> 
+                      
+     
+                    </div>
+                  
+                  <div class="col">
+                    <input type="file" id="file-selector" accept=".jpg, .jpeg, .png" style="display:none;">
+                    <button type="button" id="imgbtn"> Choose file </button>
+                  </div>
+                  </div>
+              <!----Start of the form, for first and last name-->
+                  <div class="p-5 col-sm-9 ">
+
+                   <form id="form1">
+                    <div class="row">
+                      <div class="col-sm-6 ">
+                        <label for="Firstname">First Name 
+                        </label>
+                         <input id= "1stName" type="text" class="form-control"  placeholder="First Name" name=" First Name" autocomplete="off">
+                         <small id="error1" class="eee"> </small>
+                       </div>
+                      
+                      <div class="col-sm-6 ">
+                        <label for="lastname">Last Name</label>
+                        <input id= "lastn" type="text" class="form-control" placeholder="Last Name" name="Last Name" autocomplete="off">
+                      <small id="error2"class="eee">  </small>
+                      </div>
+                    </div>
+                    
+                    <br>
+              <!--start of the about section-->
+                    <div class="form-group">
+                     <div class="col-sm-12">
+                        <label for="About">About</label>
+                        <span id ="showcomment" > <span id="numleft"  ></span> characters left &ensp; </span>  
+                         <textarea id="about1" class="form-control" rows="2" cols="2" maxlength="50" autocomplete="off"></textarea>
+                         <small id="error3" class="eee">  </small>
+                    </div>
+                    <br>
+              <!---start of the language field-->
+                    <div class="row">
+                     <div class="col-sm-6">
+                        <label for="language">Preffered languange</label>
+                          <select class="form-select">
+                            <option selected>None </option>
+                            <option value="1">English</option>
+                            <option value="2">Hindi</option>
+                            <option value="3">Marathi</option>
+                            <option value="4">Telugu</option>
+                            <option value="5">Tamil</option>
+
+                          </select>
+                    </div>
+                <!--start of the birthdate field-->
+                      <div class="col-sm-6 " >
+                        <label for="Joining date">Joining date </label>
+                        <br>
+                        <input type="date" id="date1" class="form-control">
+                      </div>
+                    </div>
+                    <br>
+                 <!--email address section-->
+                    <div class="row">
+                      <div class="col-sm-6">
+                      <lable for="email">Email Address</lable>
+                      <input type="Email" class="form-control" id="em"> </input>
+                      <small class="eee"> error </small>
+                        </div>
+                        
+                        <!--phone number section-->
+                        <div class="col-sm-6">
+                          <lable for="email">Phone Number</lable>
+                          <input type="number" class="form-control" id="ph"> </input>
+                          <small> error </small>
+                            </div>
+                            </div>
+                            <!--  submit button-->
+                    <div class="col-sm-3">
+               
+                  <div class="row container mt-3">
+                   <button  type="button" class="btn btn-primary" id="submit"  value="submit">
+                     Submit
+                   </button>
+                 </div>
+                
+              
+          </div>
+          
+                  </form>
+               
+          </div>
+      </div>
+  
+               <!---Start of the table-->
+               <div class="container">
+                <div class="col-sm-12">
+                    <table style="border:1px" id="tb"  style="width:100%"" >
+                      <h5 style="text-align: center; "> Game Time </h5>
+                        <thead >
+                         
+                          <tr>
+                            <th>Name</th>
+                            <th>Place</th>
+                            <th>Animal</th>
+                            <th>Thing</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Value 1</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                            <td>Value 13</td>
+                          </tr>
+                          <tr>
+                            <td>Value 4</td>
+                            <td>Value 5</td>
+                            <td>Value 6</td>
+                            <td>Value 14</td>
+                          </tr>
+                          <tr>
+                            <td>Value 7</td>
+                            <td >Value 8</td>
+                            <td>Value 9</td>
+                            <td>Value 15</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Value 10</td>
+                            <td >Value 11</td>
+                            <td>Value 12</td>
+                            <td>Value 16</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                     <!---for link-->
+                  <br>
+                      <a href="https://www.youtube.com/watch?v=FkuqYtE1rw0" style="color: black; text-decoration: none;"> Watch how to play!</a>
+                  <br>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./demoscript.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"> </script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"> </script>
+        <script src=" https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"> </script>
+
+    
+    
+   
+<script>
+        $(document).ready(function()
+{
+  $('#tb').DataTable();
+ }
+     );
+
+     </script>
+                   
+    </body>
+<html>

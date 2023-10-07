@@ -1,0 +1,107 @@
+
+
+.container
+ {
+    background-color:bisque;
+
+}
+
+img
+{
+    border-radius: 50%;
+    padding:1px 1px 1px;
+    margin-top:20px;
+    
+}
+
+th
+{
+    background-color: black;
+    color: white;
+}
+
+tr,td
+{
+    background-color: rgba(198, 192, 192, 0.966);
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+} 
+
+    
+table, table td, table tr 
+{
+    padding:5px;
+    border: 1px solid;
+    margin-bottom: 10px;
+     
+}
+
+h5
+{
+    caption-side: top;
+    font-style:italic;
+    text-decoration: underline;
+    font-weight: 600;
+     
+
+}
+input{
+
+    border-width:2px ;
+}
+
+
+
+
+.eee.error
+{   position: relative;
+    visibility: visible;
+}
+
+input.form-control,textarea.form-control
+{
+    border-color:rgb(176, 174, 174);
+    outline: 0;
+    border-width: 1.5px;
+}
+small
+{
+    color:red;
+}
+input:invalid 
+{   border: 2px solid red; }
+
+span
+{
+ background-color: black;
+ border-radius: 10px;
+color: white;
+margin-left: 10px;
+
+
+}
+
+label
+{
+ padding: 4px;
+}
+.green-border {
+    border: 1px solid green;
+}
+
+.red-border {
+    border: 1px solid red;
+}
+
+
+#lastn
+{
+    border: 1px solid gray;
+    padding: 4px
+}
+
+
