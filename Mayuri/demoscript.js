@@ -16,28 +16,53 @@ const emailval=document.getElementById("em").value;
 const phnmval=document.getElementById("ph").value;
 
 
- sbmt.addEventListener('click', (Event)=>
+sbmt.addEventListener('click', (Event)=>
 {
    Event.preventDefault();
-   validatee();
+   validatee(Fname);
 });
-function  validatee(){
+function  validatee(element)
 
-if(Fnameval.trim()==="")
 {
-   success(Fname);
-   return false;
-   
+
+
+
+   if(Fname.value.trim()==="")
+
+{
+   Fname.style.border="2px solid red";
+ document.getElementById("error1").innerHTML= "Please enter the first name";
+ 
+ 
 }
 else
 {
-  
-   error(Fname);
-   document.getElementById("error1").innerHTML= "Please enter the first name";
-   return true;
+   Fname.style.border="2px solid green";
+    document.getElementById("error1").innerHTML= "";
+
 
 }
-};
+}
+/*{
+
+if(Fnameval.trim()==="")
+{
+   error(element);
+   console.log("yyyy")
+   return false;
+   
+}
+else  
+{
+
+  
+   success(element);
+   document.getElementById("error1").innerHTML= "Please enter the first name";
+   console.log("yyyttt");
+   
+
+}
+
 function error(element)
 {
    element.style.border="2px solid red";
@@ -46,8 +71,25 @@ function success(element)
 {
    element.style.border="2px solid green";
 }
+}
+ */
+
+/*Fname.addEventListener("input", function () {
+    if (Fname.value.trim() !== "") {
+      Fname.style.borderColor = "green";
+    } else {
+      Fname.style.borderColor = "red"; // Reset to default
+    }
+}) */
 
 
+/* if(individual.value <= 1) {
+   error.style.display = 'block'
+   individual.style.borderColor = 'red'
+} else if(individual.value >= 1) {
+   error.style.display = 'none'
+   individual.style.borderColor = 'hsl(172, 67%, 45%)'
+} */
 
 
 

@@ -5,7 +5,17 @@
     background-color:bisque;
 
 }
+.errror
+{
 
+border:red;
+
+
+}
+.success
+{
+ border: red;
+}
 img
 {
     border-radius: 50%;

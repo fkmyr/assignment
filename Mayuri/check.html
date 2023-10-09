@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+<input type="text" class="form-control" id="i1" autocomplete="off"> first name</input><br>
+<small style="color: red;" id="sm1">  </small> <br>
+<input type="text" id="i2"> last name</input><br>
+<small style="color:red" id="sm2"> </small> <br>
+<input type="text" id="phone"> phone number </input> <br>
+<small id="sm3" style="color:red"></small>
+<button type="button" onclick="today()" id="btn"> submit </button>
+</form>
+<script>
+const a= document.getElementById('i1');
+const b= document.getElementById('i2');
+const pattern= /^([a-zA-Z0-9])$/;
+const num= document.getElementById('phone');
+const num2= document.getElementById('phone').innerHTML;
+
+
+function today(){
+
+if(a.value.trim()==="")
+
+{
+ a.style.border="2px solid red";
+ document.getElementById("sm1").innerHTML= "Please enter the first name";
+ 
+ 
+}
+else
+{
+    a.style.border="2px solid green";
+    document.getElementById("sm1").innerHTML= "";
+    a.readOnly=true;
+
+
+}
+if(b.value.trim()==="")
+
+{
+ b.style.border="2px solid red";
+ document.getElementById("sm2").innerHTML= "Please enter the last name";
+ 
+ 
+}
+else
+{
+    b.style.border="2px solid green";
+    document.getElementById("sm2").innerHTML= "";
+
+
+}
+if
+(pattern.test(num2))
+{  num.style.border="2px solid red";
+    document.getElementById("sm3").innerHTML= "enter";
+}
+else{
+    num.style.border="2px solid green";
+    document.getElementById("sm3").innerHTML= "enter nothing";
+} 
+}
+
+</script>
+
+</body>
+</html>
